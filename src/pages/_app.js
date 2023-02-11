@@ -1,6 +1,7 @@
 import App from "next/app";
 import Router from "next/router";
 import Layout from "../components/layout/layout";
+import '../styles/globals.css';
 let copies = [];
 const onLoad = () => {
   const nodes = document.querySelectorAll(
