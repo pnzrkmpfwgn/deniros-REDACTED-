@@ -6,7 +6,7 @@ const MenuOverlay=({navbarOpen,setNavbarOpen})=>{
       navbarOpen ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-full"
     }`}
   >
-    <ul className="w-full flex flex-col items-start">
+    <ul style={{'marginTop':'30px'}} className="w-full flex flex-col items-start z-20">
       <li className="nav-li">
         <Link
           href="/"

@@ -48,7 +48,7 @@ export default function Layout({ children }) {
   return (
     <>
        <LayoutContext.Provider value={{locale}} >
-       <AnimatePresence>
+       {/* <AnimatePresence>
         {
           loadingFinish && <motion.div className={classes.page_loading} 
           initial={{opacity:1}} 
@@ -74,7 +74,7 @@ export default function Layout({ children }) {
             </motion.div>
           </motion.div>
         }
-       </AnimatePresence>
+       </AnimatePresence> */}
       {/* <select onChange={handleChange}>
         {['en','tr'].map((x)=>(
           <option value={x} key={x}>{x}</option>
@@ -87,7 +87,7 @@ export default function Layout({ children }) {
           <div style={{'width':'100vw', 'height':'100px'}} ></div>
             <MenuOverlay navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen} />
            
-            <main title="Main">
+            <main title="Main" style={{'marginTop':'30px'}} >
               {children}
             </main>
             <Footer footer_title={<FormattedMessage id="heading" defaultMessage="Default" values={{locale}} />} />
