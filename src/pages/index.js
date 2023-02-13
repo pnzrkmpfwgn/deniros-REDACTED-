@@ -1,6 +1,8 @@
 import { AnimatePresence, motion } from 'framer-motion'
 import {useEffect, useState} from 'react';
 import classes from '../styles/Home.module.css';
+import AboutUsButton from '@/components/buttons/about_us_button/AboutUsButton';
+import MenuButton from '@/components/buttons/menu_button/MenuButton';
 
 const images = [
   '/images/1.jpg',
@@ -80,13 +82,26 @@ export default function Home() {
             custom={direction}
           />
         </AnimatePresence>
+        <div style={{width:'100%',height:'200px'}} ></div>
+        
+        <AnimatePresence>
         <div className={classes.landing}>
-            <h1 className={classes.landing} > Lorem Ipsum Dolor Sit Amet </h1>
-            <div>
-            <button className={classes.landing} >Menu</button>
-            <button className={classes.landing} > About Us </button>
-            </div>
+            <motion.h1
+            initial={{translateY:500,opacity:0}}
+            animate={{translateY:0,opacity:1}}
+            transition={{duration:0.3,delay:3.5,type: "spring", stiffness: 100}}
+            className={classes.landing + " " + classes.heading} > 
+              Lorem Ipsum Dolor Sit Amet... 
+            </motion.h1>
+            <motion.div initial={{translateX:500,opacity:0}}
+            animate={{translateX:0,opacity:1}}
+            transition={{duration:0.3,delay:3.7,type: "spring", stiffness: 100}}
+             className={classes.button_container} >
+            <AboutUsButton />
+            <MenuButton />
+            </motion.div>
           </div>
+        </AnimatePresence>
       </div>
     </>
   )

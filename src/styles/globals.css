@@ -6,6 +6,12 @@
     font-family:'dynamo-magician-regular', sans-serif;
     src: url(../fonts/DYNAMO\ magician.ttf);
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body, html{
-    font-family: 'dynamo-magician-regular', sans-serif;
+    font-family: 'Bebas Neue', cursive;
+    /* background-color: black; */
 }
