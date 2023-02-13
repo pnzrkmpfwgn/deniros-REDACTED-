@@ -2,7 +2,7 @@ import { useState,useEffect } from "react";
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
 import { IntlProvider,FormattedMessage } from "react-intl";
-import LayoutContext from "./layoutContext";
+import LayoutContext from "./LayoutContext";
 import MenuOverlay from '../Menu/MenuOverlay';
 import {message} from  '../../data/langData';
 import Image from 'next/image';
