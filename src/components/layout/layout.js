@@ -84,10 +84,10 @@ export default function Layout({ children }) {
         {/* <div className="App w-full min-h screen bg-gray-800" > */}
         <div>
           <Header navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen} title={<FormattedMessage id="heading" defaultMessage="Default" values={{locale}} />} />
-          <div style={{'width':'100vw', 'height':'100px'}} ></div>
+          {/* <div style={{'width':'100vw', 'height':'300px'}} ></div> */}
             <MenuOverlay navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen} />
            
-            <main style={{'marginTop':'30px'}} >
+            <main >
               {children}
             </main>
             <Footer footer_title={<FormattedMessage id="heading" defaultMessage="Default" values={{locale}} />} />

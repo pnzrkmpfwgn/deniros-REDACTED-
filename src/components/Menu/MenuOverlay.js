@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import SocialButtons from '../buttons/social_buttons/SocialButtons';
 
 const MenuOverlay=({navbarOpen,setNavbarOpen})=>{
     return  <nav
@@ -30,6 +31,9 @@ const MenuOverlay=({navbarOpen,setNavbarOpen})=>{
         >
           About
         </Link>
+      </li>
+      <li>
+        <SocialButtons />
       </li>
     </ul>
   </nav>

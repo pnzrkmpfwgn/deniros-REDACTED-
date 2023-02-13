@@ -3,7 +3,7 @@ import {useEffect, useState} from 'react';
 import classes from '../styles/Home.module.css';
 import AboutUsButton from '@/components/buttons/about_us_button/AboutUsButton';
 import MenuButton from '@/components/buttons/menu_button/MenuButton';
-
+import About from '../components/about/About';
 const images = [
   '/images/1.jpg',
   '/images/2.jpg',
@@ -70,6 +70,7 @@ export default function Home() {
     <>
      <div>
      <AnimatePresence initial={false} custom={direction}>
+          
           <motion.img
             variants={variants}
             animate='animate'
@@ -81,16 +82,17 @@ export default function Home() {
             key={images[index]}
             custom={direction}
           />
+         <div className={classes.image_divider} />
         </AnimatePresence>
-        <div style={{width:'100%',height:'200px'}} ></div>
+        {/* <div style={{width:'100%',height:'200px'}} ></div> */}
         
         <AnimatePresence>
         <div className={classes.landing}>
             <motion.h1
-            initial={{translateY:500,opacity:0}}
-            animate={{translateY:0,opacity:1}}
+            initial={{translateX:700,opacity:0}}
+            animate={{translateX:0,opacity:1}}
             transition={{duration:0.3,delay:3.5,type: "spring", stiffness: 100}}
-            className={classes.landing + " " + classes.heading} > 
+            className={classes.heading} > 
               Lorem Ipsum Dolor Sit Amet... 
             </motion.h1>
             <motion.div initial={{translateX:500,opacity:0}}
@@ -102,6 +104,8 @@ export default function Home() {
             </motion.div>
           </div>
         </AnimatePresence>
+        {/* <div style={{width:'100%',height:'445px'}} ></div> */}
+        <About />
       </div>
     </>
   )

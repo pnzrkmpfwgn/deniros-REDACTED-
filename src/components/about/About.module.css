@@ -1,0 +1,35 @@
+.rounded_image{
+    border-radius: 0px 10px 200px 0px;
+    z-index: 2;
+}
+
+.about_container{
+    margin-top: 45px;
+    margin-bottom:500px;
+    display: flex;
+    justify-content: space-between;
+    color:rgb(71, 71, 71)
+}
+
+.heading{
+    font-size:40px;
+    padding:25px;
+    font-style: italic;
+}
+
+.paragraph{
+    font-size:25px;
+    padding:25px;
+    width: 75%;
+}
+
+.text_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 50px;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.842);
+    box-shadow: 10px 10px 5px rgb(72, 72, 72);
+    transform: skew( 10deg);
+}
