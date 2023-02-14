@@ -3,9 +3,13 @@
     z-index: 2;
 }
 
+.rounded_image_2{
+    border-radius: 0px 10px 0px 200px;
+    z-index: 2;
+}
+
 .about_container{
     margin-top: 45px;
-    margin-bottom:500px;
     display: flex;
     justify-content: space-between;
     color:rgb(71, 71, 71)
@@ -32,4 +36,17 @@
     background-color: rgba(255, 255, 255, 0.842);
     box-shadow: 10px 10px 5px rgb(72, 72, 72);
     transform: skew( 10deg);
+}
+
+.section_2{
+    margin:40px 50px; 
+}
+.section_2_text_container{
+    background-color: rgba(255, 255, 255, 0.063);
+    color:rgba(255, 255, 255, 0.842);
+}
+
+.map{
+    width: 300px;
+    margin-left:75px;
 }
