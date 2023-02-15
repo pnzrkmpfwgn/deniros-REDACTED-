@@ -4,6 +4,8 @@ import classes from '../styles/Home.module.css';
 import AboutUsButton from '@/components/buttons/about_us_button/AboutUsButton';
 import MenuButton from '@/components/buttons/menu_button/MenuButton';
 import About from '../components/about/About';
+import AboutMobile from '../components/aboutMobile/AboutMobile';
+import { useMediaQuery } from '@/utils/hooks';
 const images = [
   '/images/1.jpg',
   '/images/2.jpg',
@@ -41,6 +43,7 @@ export default function Home() {
   const [index, setIndex] = useState(0)
   const [direction, setDirection] = useState(0)
 
+  const size = useMediaQuery(1024);
 
   // function prevStep() {
   //   setDirection(-1)
@@ -105,7 +108,7 @@ export default function Home() {
           </div>
         </AnimatePresence>
         {/* <div style={{width:'100%',height:'445px'}} ></div> */}
-        <About />
+        {size ? <AboutMobile /> : <About />}
       </div>
     </>
   )

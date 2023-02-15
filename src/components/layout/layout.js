@@ -48,7 +48,7 @@ export default function Layout({ children }) {
   return (
     <>
        <LayoutContext.Provider value={{locale}} >
-       {/* <AnimatePresence>
+       <AnimatePresence>
         {
           loadingFinish && <motion.div className={classes.page_loading} 
           initial={{opacity:1}} 
@@ -74,7 +74,7 @@ export default function Layout({ children }) {
             </motion.div>
           </motion.div>
         }
-       </AnimatePresence> */}
+       </AnimatePresence>
       {/* <select onChange={handleChange}>
         {['en','tr'].map((x)=>(
           <option value={x} key={x}>{x}</option>

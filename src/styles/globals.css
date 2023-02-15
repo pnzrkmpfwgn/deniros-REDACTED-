@@ -11,7 +11,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    overflow-x: hidden;
+}
 body, html{
     font-family: 'Bebas Neue', cursive;
     background-color: rgb(51, 51, 51);
+    
 }
