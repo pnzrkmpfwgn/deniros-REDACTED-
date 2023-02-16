@@ -69,6 +69,13 @@ export default function Home() {
     }
   },[index])
 
+  const handleScroll= () => {
+    const element = document.getElementById('about_section');
+    if (element){
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
   return (
     <>
      <div>
@@ -102,13 +109,13 @@ export default function Home() {
             animate={{translateX:0,opacity:1}}
             transition={{duration:0.3,delay:3.7,type: "spring", stiffness: 100}}
              className={classes.button_container} >
-            <AboutUsButton />
+            <AboutUsButton handleScroll={handleScroll} />
             <MenuButton />
             </motion.div>
           </div>
         </AnimatePresence>
         {/* <div style={{width:'100%',height:'445px'}} ></div> */}
-        {size ? <AboutMobile /> : <About />}
+        <div id="about_section" >{size ? <AboutMobile /> : <About />}</div>
       </div>
     </>
   )

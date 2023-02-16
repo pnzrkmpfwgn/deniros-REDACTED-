@@ -7,17 +7,18 @@
 .rounded_image_2{
     border-radius: 0px 10px 0px 200px;
     margin-right: 75px;
+    overflow-x: hidden;
     z-index: 2;
 }
 
 .about_container{
     margin-top: 200px;
     margin-bottom: 200px;
-    overflow-x: hidden;
+    overflow: hidden;
     z-index: 6;
     display: flex;
     justify-content: space-between;
-    color:rgb(71, 71, 71)
+    color:rgb(71, 71, 71);
 }
 
 .heading{
@@ -58,6 +59,11 @@
     background-color: rgba(255, 255, 255, 0.842);
     box-shadow: 10px 10px 5px rgb(72, 72, 72);
     transform: skew( 10deg);
+}
+
+.text_final_container{
+
+    width: 35%;
 }
 
 .text_container_final_section{

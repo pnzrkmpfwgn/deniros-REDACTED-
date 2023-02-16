@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import SocialButtons from '../buttons/social_buttons/SocialButtons';
+import classes from './menuOverlay.module.css';
 
 const MenuOverlay=({navbarOpen,setNavbarOpen})=>{
     return  <nav
@@ -8,28 +9,48 @@ const MenuOverlay=({navbarOpen,setNavbarOpen})=>{
     }`}
   >
     <ul style={{'marginTop':'30px'}} className="w-full flex flex-col items-start z-20">
-      <li className="nav-li">
+      <li className={classes.nav_li}  onClick={(e) => {
+            e.preventDefault();
+            setNavbarOpen(false);
+          }}>
         <Link
           href="/"
           className="nav-link"
-          onClick={(e) => {
-            e.preventDefault();
-            setNavbarOpen(false);
-          }}
         >
           Home
         </Link>
       </li>
-      <li className="nav-li">
-        <Link
-          href="/"
-          className="nav-link"
-          onClick={(e) => {
+      <li className={classes.nav_li}   onClick={(e) => {
             e.preventDefault();
             setNavbarOpen(false);
-          }}
+          }} >
+        <Link
+          href="/menu"
+          className="nav-link"
         >
-          About
+          Menu
+        </Link>
+      </li>
+      <li className={classes.nav_li} onClick={(e) => {
+            e.preventDefault();
+            setNavbarOpen(false);
+          }} >
+        <Link
+          href="/contact"
+          className="nav-link"
+        >
+          Contact
+        </Link>
+      </li>
+      <li className={classes.nav_li} onClick={(e) => {
+            e.preventDefault();
+            setNavbarOpen(false);
+          }} >
+        <Link
+          href="/FAQ"
+          className="nav-link"
+        >
+          FAQ
         </Link>
       </li>
       <li>

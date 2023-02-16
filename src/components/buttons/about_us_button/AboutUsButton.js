@@ -1,9 +1,9 @@
 import classes from '../regular_button/Regular_button.module.css'
 import Link from 'next/link';
-const AboutUsButton = () =>{
-    return <div className={classes.button + " " + classes.button_} id="button-5">
+const AboutUsButton = ({handleScroll}) =>{
+    return <div onClick={() => handleScroll()} className={classes.button + " " + classes.button_} id="button-5">
     <div className={classes.translate}></div>
-    <Link href="#" className={classes.link} >About Us</Link>
+    <button className={classes.link} >About Us</button>
   </div>
 }
 
