@@ -90,7 +90,7 @@ const About = () => {
                 </div>
                 <div className={classes_2.button + " " + classes_2.button_} id="button-5">
                     <div className={classes_2.translate}></div>
-                    <a style={{color:"rgb(71, 71, 71)"}}  href="/contact" className={classes.link} > İletişim </a>
+                    <Link style={{color:"rgb(71, 71, 71)"}}  href="/contact" className={classes.link} > İletişim </Link>
                 </div>
                     </div>
             </motion.div>
